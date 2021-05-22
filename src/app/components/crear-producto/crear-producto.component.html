@@ -1,1 +1,25 @@
-<p>crear-producto works!</p>
+<h1 class="m-auto p-4 text-center titulo-crear mt-3">CREAR NUEVO PRODUCTO</h1>
+<div class="card row crear-producto">
+    
+    <form class="p-5 col-12">
+        <div class="mb-3 d-md-flex">
+          <input type="text" class="form-control col m-2" id="nombre" placeholder="Nombre">
+          
+          <input class="form-control col m-2" type="text" list="datalistCategoria" id="categoriaDataList" placeholder="Categoria...">
+            <datalist id="datalistCategoria">
+                <option value="Electronicos">
+                <option value="Ropa Caballeros">
+                <option value="Ropa Damas">
+                <option value="Electrodomesticos">
+                <option value="Juguetes">
+            </datalist>
+        </div>
+        <div class="mb-3 d-md-flex">
+            <input type="text" class="form-control col m-2" id="ubicacion" placeholder="Ubicacion">
+            <input type="number" class="form-control col m-2" id="precio" placeholder="Precio">
+        </div>
+        <button routerLink="/listar-productos" class="btn btn-primary col-12 col-md-4 btn-guardar btn-volver">Volver sin guardar</button>
+        <button type="submit" class="btn btn-primary col-12 col-md-2 offset-md-6 btn-guardar">Guardar</button>
+    </form>
+    
+</div>
